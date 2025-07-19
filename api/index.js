@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // 🗂️ Array of servers — extend this list anytime
-const servers = process.env.SERVERS.split(',');
+const servers = process.env.SERVERS?.split(',');
 
 // ⏰ Schedule: every 5 minutes
 cron.schedule('*/5 * * * *', () => {
