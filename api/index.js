@@ -1,11 +1,11 @@
 import cron from 'node-cron';
 import axios from 'axios';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // 🗂️ Array of servers — extend this list anytime
-const servers = [
-  'https://ticky-api.onrender.com',
-  'https://blog-app-ug77.onrender.com'
-];
+const servers = process.env.SERVERS.split(',');
 
 // ⏰ Schedule: every 5 minutes
 cron.schedule('*/5 * * * *', () => {
