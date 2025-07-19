@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build output (if any)
+dist/
+build/
+
+# Vercel output
+.vercel/
+
+# IDE stuff
+.vscode/
+.idea/
+
+# Mac system file
+.DS_Store
